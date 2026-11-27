@@ -32,9 +32,9 @@ fun extractColumns(
     expr: LogicalExpr,
     input: LogicalPlan,
 ): Set<String> {
-    val accum = mutableSetOf<String>()
-    extractColumns(expr, input, accum)
-    return accum.toSet()
+  val accum = mutableSetOf<String>()
+  extractColumns(expr, input, accum)
+  return accum.toSet()
 }
 
 fun extractColumns(
